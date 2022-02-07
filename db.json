@@ -1,0 +1,94 @@
+{
+  "characters": [
+    {
+      "name": "Alisher",
+      "lastName": "Imanbekov",
+      "number": "+996702132232",
+      "kpi": "70",
+      "kpi2": "56",
+      "img": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F10%2Fbored-ape-yacht-club-nft-3-4-million-record-sothebys-metaverse-0.jpg?w=960&cbr=1&q=90&fit=max",
+      "id": 1
+    },
+    {
+      "name": "AbdulAziz",
+      "lastName": "Islamov",
+      "number": "+996706223343",
+      "kpi": "56",
+      "kpi2": "50",
+      "img": "https://www.ledgerinsights.com/wp-content/uploads/2021/12/adidas-nft-bored-ape.jpg",
+      "id": 2
+    },
+    {
+      "name": "Eldar",
+      "lastName": "Niyazov",
+      "number": "+99622220222",
+      "kpi": "65",
+      "kpi2": "52",
+      "img": "https://www.ledgerinsights.com/wp-content/uploads/2021/12/adidas-nft-bored-ape.jpg",
+      "id": 3
+    },
+    {
+      "name": "Semen",
+      "lastName": "Seiytbekov",
+      "number": "+99670123345",
+      "kpi": "78",
+      "kpi2": "74",
+      "img": "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2021%2F10%2Fbored-ape-yacht-club-nft-3-4-million-record-sothebys-metaverse-0.jpg?w=960&cbr=1&q=90&fit=max",
+      "id": 4
+    },
+    {
+      "name": "Tilek",
+      "lastName": "Harkov",
+      "number": "+9962200002",
+      "kpi": "42",
+      "kpi2": "34",
+      "img": "https://www.ledgerinsights.com/wp-content/uploads/2021/12/adidas-nft-bored-ape.jpg",
+      "id": 5
+    },
+    {
+      "name": "Ilgiz",
+      "lastName": "Ashiev",
+      "number": "+996708233421",
+      "kpi": "66",
+      "kpi2": "59",
+      "img": "https://www.ledgerinsights.com/wp-content/uploads/2021/12/adidas-nft-bored-ape.jpg",
+      "id": 6
+    },
+    {
+      "name": "Iskak",
+      "lastName": "Leroy",
+      "number": "+99670234542",
+      "kpi": "76",
+      "kpi2": "56",
+      "img": "https://i.pinimg.com/originals/0a/cc/2d/0acc2d8c0064cb6926a32c7b17d21095.jpg",
+      "id": 7
+    },
+    {
+      "name": "Temirlan",
+      "lastName": "Kadyrov",
+      "number": "+99620222222",
+      "kpi": "99",
+      "kpi2": "100",
+      "img": "https://news.artnet.com/app/news-upload/2021/08/Yuga-Labs-Bored-Ape-Yacht-Club-7940.jpg",
+      "id": 8
+    },
+    {
+      "name": "Aziz",
+      "lastName": "Azatbekov",
+      "number": "+996700163111",
+      "kpi": "109",
+      "kpi2": "125",
+      "img": "https://s.yimg.com/ny/api/res/1.2/LoxV2pkZq3aBT73f5t6g6Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTY0MA--/https://s.yimg.com/uu/api/res/1.2/hEsTqKsA8REZH_ix0UlbyA--~B/aD02MzE7dz02MzE7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/coin_rivet_596/0f003783d903c8a3275b4c775d5cb857",
+      "id": 9
+    },
+    {
+      "name": "Bad",
+      "lastName": "Vicious",
+      "number": "+99623212322",
+      "kpi": "90",
+      "kpi2": "85",
+      "img": "https://i0.wp.com/bitium.net/wp-content/uploads/2022/01/Monkey-NFT.jpg",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Подключение CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Подключение иконок font awesome -->
+    <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+    <!-- Подключение BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Подключение библиотеки JQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+ 
+<!-- HEADER WITH NAVBAR STARTS --> 
+ 
+<header class="header"> 
+  <div class="container"> 
+    <div class="header__body"> 
+      <a href="#" class="header__logo"> 
+        <img src="./img/icons8-totoro.svg" alt="" class="header-img"/> 
+      </a> 
+
+
+
+      <div class="header__burger"> 
+        <span></span>
+      </div> 
+      <nav class="header__menu"> 
+        <ul class="header__list"> 
+          <li> 
+            <a href="" class="header__link">Application Form</a> 
+          </li> 
+          <li> 
+            <a href="" class="header__link">More Information</a> 
+          </li> 
+          <li> 
+            <a href="" class="header__link">Opportunities</a> 
+          </li> 
+          <li> 
+            <a href="" class="header__link">Get In Touch</a> 
+          </li> 
+        </ul> 
+      </nav> 
+
+       
+      <input type="search" id="search" placeholder="Search" name="" 
+      aria-label="Search through site content"> 
+    </div> 
+  </div> 
+</header> 
+
+<!-- HEADER WITH NAVBAR ENDS --> 
+
+
+   <!-- CONTENT SECTION STARTS --> 
+
+   <div class="content">
+    <div class="container">
+      <div>
+        <div class="accordion-body">
+          <div class="d-flex flex-column w-100 align-items-center">
+            <input
+            type="text"
+            id="img"
+            class="mb-2 w-50 form-control inp"
+            placeholder="Student's photo"
+          />
+
+            <input
+              type="text"
+              id="name"
+              class="mb-2 w-50 form-control inp"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              id="last-name"
+              class="mb-2 w-50 form-control inp"
+              placeholder="Surname"
+            />
+            <input
+              type="text"
+              id="number"
+              class="mb-2 w-50 form-control inp"
+              placeholder="Telephone number"
+            />
+            <input
+              type="text"
+              id="kpi"
+              class="mb-2 w-50 form-control inp"
+              placeholder="Weekly KPI"
+            />
+            <input
+              type="text"
+              id="kpi-2"
+              class="mb-2 w-50 form-control inp"
+              placeholder="Monthly KPI"
+            />
+            <button class="btn btn-warning w-25 text-dark" id="btn-add">Create personal information</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- LIST STARTS--> 
+<div
+id="products-list"
+class="d-flex flex-wrap justify-content-center"
+></div>
+<!-- LIST ENDS --> 
+
+<!-- MODAL WINDOW STARTS --> 
+<div
+class="modal fade"
+id="editFormModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Edit product</h5>
+
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="modal-body">
+      <div class="d-flex flex-column w-100 align-items-center">
+        <input
+        type="text"
+        id="edit-img"
+        class="mb-2 w-50 form-control inp"
+        placeholder="Student's photo"
+      />
+        <input
+          type="text"
+          id="edit-name"
+          class="mb-2 w-50 form-control inp"
+          placeholder="name"
+        />
+        <input
+          type="text"
+          id="edit-last-name"
+          class="mb-2 w-50 form-control inp"
+          placeholder="last-name"
+        />
+        <input
+          type="text"
+          id="edit-number"
+          class="mb-2 w-50 form-control inp"
+          placeholder="number"
+        />
+        <input
+          type="text"
+          id="edit-kpi"
+          class="mb-2 w-50 form-control inp"
+          placeholder="Weekly KPI"
+        />
+        <input
+          type="text"
+          id="edit-kpi-2"
+          class="mb-2 w-50 form-control inp"
+          placeholder="Mothly KPI"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-dark"
+      data-bs-dismiss="modal"
+    >
+      Close
+    </button>
+    <button type="submit" class="btn btn-dark bg-warning text-dark" id="btn-save-edit">
+      Save changes
+    </button>
+  </div>
+</div>
+</div>
+
+  <!-- MODAL WINDOW ENDS -->
+</div> 
+
+<!-- PAGINATION START -->
+
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item prev">
+      <a class="page-link text-dark bg-warning" href="#">Previous</a>
+    </li>
+    <!-- <li class="page-item"><a class="page-link" href="#">1</a></li> -->
+    <div class="pagination-list d-flex"></div>
+
+    <li class="page-item next"><a class="page-link text-dark bg-warning" href="#">Next</a></li>
+  </ul>
+</nav>
+
+<!-- PAGINATION END -->
+
+<!-- WISH LIST STARTS -->
+
+<div class="hero">
+  <div class="container">
+  <h1>YOUR WISH LIST</h1>
+  <form>
+    <input type="text" placeholder="Add some wish" class="todo-input" />
+    <button class="todo-button" type="submit">
+      <i class="fas fa-plus-square"></i>
+    </button>
+    <div class="select">
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
+  </form>
+  <div class="todo-container">
+    <ul class="todo-list"></ul>
+  </div>
+</div>
+</div>
+
+<!-- WISH LIST ENDS -->
+
+  <!-- CONTENT SECTION ENDS --> 
+
+    <!-- FOOTER STARTS -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row_elem">
+          <div class="footer__col">
+            <h4>Learn more</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">questions</a></li>
+              <li><a href="#">answers</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>Follow our news</h4>
+            <ul>
+              <li><a href="#">watch</a></li>
+              <li><a href="#">read</a></li>
+              <li><a href="#">podcast</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h4>follow us</h4>
+            <div class="social__links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div> 
+    <!-- FOOTER ENDS -->
+ 
+    <!-- Подключение JS скрипта от JQuery -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Подключение JS файла -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>

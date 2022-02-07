@@ -1,0 +1,487 @@
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(120deg, #e2c35d, #fda085);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+/* GLOBAL STYLING ENDS */
+
+#search {
+  position: relative;
+  z-index: 5;
+}
+
+/* HEADER, NAV AND BURGER STYLING STARTS */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5e5373;
+  z-index: 2;
+}
+
+.header__body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.header__logo {
+  flex: 0 0 60px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  margin-left: 100px;
+}
+
+.header__logo img {
+  max-width: 100%;
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__list {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.header__link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.header__list li {
+  list-style: none;
+  margin: 0px 0px 0px 20px;
+}
+
+.header__list li a {
+  text-decoration: none;
+}
+/* HEADER, NAV AND BURGER STYLING ENDS */
+
+/* RESPONSIVE BURGER AND HEADER STARTS */
+
+@media (max-width: 996px) {
+  #search {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  #search {
+    display: block;
+    position: absolute;
+    top: -100px;
+    right: 0;
+    transition: all 0.5s ease;
+    overflow: auto;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .header__body {
+    height: 50px;
+  }
+
+  .header__logo {
+    flex: 0px 0px 40px;
+  }
+
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 3;
+  }
+  .header__burger span {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.6s ease 0s;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.6s ease 0s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header__burger.active span {
+    transform: scale(0);
+  }
+
+  #search.active {
+    top: 220px;
+  }
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 0.5s ease 0s;
+    background-color: #18b5a4;
+    padding: 70px 10px 20px 10px;
+  }
+
+  .header__menu.active {
+    top: 0;
+  }
+
+  .header__list {
+    display: block;
+  }
+
+  .header__list li {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .header__link {
+    font-size: 20px;
+  }
+}
+/* RESPONSIVE BURGER AND HEADER ENDS */
+
+/* CONTENT STYLING STARTS */
+.content {
+  padding: 100px 0px 0px 0px;
+}
+
+.content__text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.content__text p {
+  margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 380px) {
+  #search.active {
+    top: 275px;
+    left: -5px;
+  }
+}
+/* CONTENT STYLING ENDS */
+
+/* FOOTER STYLING STARTS */
+
+.row_elem {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+.footer {
+  background-color: #5e5373;
+  padding: 50px 0;
+  margin-top: auto;
+}
+.footer__col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer__col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+  cursor: pointer;
+}
+.footer__col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #d88771;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer__col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer__col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer__col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer__col .social__links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.social__links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+/* FOOTER STYLING ENDS */
+
+/* FOOTER RESPONSIVE STARTS */
+
+@media (max-width: 767px) {
+  .footer__col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer__col {
+    width: 100%;
+  }
+}
+
+/* FOOTER RESPONSIVE ENDS */
+
+/* ПРИЖАТЬ ФУТЕР К САМОМУ НИЗУ СТРАНИЦЫ */
+
+.page {
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* WISH LIST STYLING STARTS */
+.hero {
+  height: 75vh;
+  padding: 20px;
+}
+
+.hero h1 {
+  max-height: 100%;
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5e5373;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 38px;
+}
+
+.todo-title {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 22px;
+  border: none;
+  background: white;
+  border-radius: 10px;
+}
+
+form button {
+  color: #d88771;
+  background: white;
+  cursor: pointer;
+  transition: all 0.8s ease;
+}
+
+form button:hover {
+  background: #d88771;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #ff6f47;
+  color: white;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 14px;
+}
+.complete-btn {
+  background: rgb(35, 179, 35);
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+Нельзя кликать на иконки .fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  pointer-events: none;
+  transition: all 0.4s ease;
+}
+
+.select:hover::after {
+  background: white;
+  color: #ff6f47;
+}
+.todo-input {
+  width: 300px;
+}
+
+/* WISH LIST STYLING ENDS */
+/* 
+RESPONSIVE WISH LIST STARTS */
+
+/* @media (max-width: 768px) {
+} */
